@@ -56,6 +56,10 @@
     opacity: 0;
     max-width: 0;
   }
+
+  .skill {
+    margin-bottom: 10px;
+  }
 </style>
 <script>
   $(function() {
@@ -88,7 +92,7 @@
     <header class="navbar-fixed-top">
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">Skill</a></li>
                 <li><a href="#experience">experience</a></li>
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#contact">contact</a></li>
@@ -105,28 +109,10 @@
                     <h4>Ahmed Eissa</h4>
                     <h1>Web<br />Developer</h1>
                 </div>
-                <ul class="text hidden">
-                  <li>N</li>
-                  <li class="ghost">T</li>
-                  <li class="ghost">T</li>
-                  <li>D</li>
-                  <li class="ghost">A</li>
-                  <li class="ghost">T</li>
-                  <li class="ghost">A</li>
-                  <li class="spaced">D</li>
-                  <li class="ghost">e</li>
-                  <li class="ghost">s</li>
-                  <li class="ghost">i</li>
-                  <li class="ghost">g</li>
-                  <li class="ghost">n</li>
-                  <li class="spaced">N</li>
-                  <li class="ghost">e</li>
-                  <li class="ghost">t</li>
-                  <li class="ghost">w</li>
-                  <li class="ghost">o</li>
-                  <li class="ghost">r</li>
-                  <li class="ghost">k</li>
-                </ul>
+                <div class="col-md-6 about-img-div">
+                    <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
+                    <img src="img/about-img.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right" data-aos-delay="0" />
+                </div>
             </div>
         </div>
     </div>
@@ -137,17 +123,34 @@
         <div class="container">
             <div class="col-md-6" data-aos="fade-up">
                 <h4>01</h4>
-                <h1 class="size-50">Know <br /> About me</h1>
-                <div class="h-50"></div>
-                <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
-                <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
-                <div class="h-50"></div> <img src="img/Signature.svg" width="230" alt="" />
-                <div class="h-50"></div>
+                <h1 class="size-50">Skill</h1>
+                <div class="h-50 skill" style="background:black;">
+                  <p style="font-size:14px; color:white;">Back End</p>
+                  <img src="img/portfolio/icon/java_icon.png" style="max-width:100%; height:auto;">
+                  <img src="img/portfolio/icon/node_icon.png" style="max-width:100%; height:auto;">
+                </div>
+                <div class="h-50 skill" style="background:black;">
+                  <p style="font-size:14px; color:white;">Front End</p>
+                  <img src="img/portfolio/icon/basic3.png" style="max-width:100%; height:auto;">
+                  <img src="img/portfolio/icon/jquery_icon.png" style="max-width:100%; height:auto;">
+                  <img src="img/portfolio/icon/vue_icon.png" style="max-width:100%; height:auto;">
+                  <img src="img/portfolio/icon/angular_icon.png" style="max-width:100%; height:auto;">
+                </div>
+                <div class="h-50 skill" style="background:black;">
+                  <p style="font-size:14px; color:white;">DataBase</p>
+                  <img src="img/portfolio/icon/postgre_icon.png" style="max-width:100%; height:auto;">
+                  <img src="img/portfolio/icon/mssql_icon.png" style="max-width:100%; height:auto;">
+                  <img src="img/portfolio/icon/oracle_icon.png" style="max-width:100%; height:auto;">
+                  <img src="img/portfolio/icon/mysql_icon.png" style="max-width:100%; height:auto;">
+                </div>
+                <div class="h-50 skill" style="background:black;">
+                  <p style="font-size:14px; color:white;">Communication / Etc.</p>
+                  <img src="img/portfolio/icon/git_icon.png" style="max-width:100%; height:auto;">
+                  <img src="img/portfolio/icon/github_icon.png" style="max-width:100%; height:auto;">
+                  <img src="img/portfolio/icon/jira_icon.png" style="max-width:100%; height:auto;">
+                </div>
             </div>
-            <div class="col-md-6 about-img-div">
-                <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
-                <img src="img/about-img.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right" data-aos-delay="0" />
-            </div>
+
         </div>
     </div>
     <!-- ./about -->
@@ -357,7 +360,7 @@
 
                 <h3>Address</h3>
                 <p>서울특별시 용산구 이태원동</p>
-                <h3> Mobile Numberr</h3>
+                <h3> Mobile Number</h3>
                 <p>010-4758-9877</p>
                 <h3>Email</h3>
                 <p>marushru@naver.com </p>
