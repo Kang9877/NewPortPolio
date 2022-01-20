@@ -14,6 +14,7 @@
     <link href="css/aos.css" rel="stylesheet">
     <!-- main style -->
     <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -260,8 +261,8 @@
                                   <!-- portfolio_container -->
                                   <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
                                       <!-- single work -->
-                                      <div class="col-md-3 col-sm-6  fashion logo">
-                                          <a id="demo01" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/screenshot/blovk1.png" alt="image" style="height:321px; width:321px"/>
+                                      <div class="col-md-4 col-sm-6  fashion logo">
+                                          <a id="demo01" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/screenshot/block1.png" alt="image" style="height:321px; width:321px"/>
                                               <div class="portfolio_item_hover">
                                                   <div class="portfolio-border clearfix">
                                                       <div class="item_info"> <span>KT GENIE BLOCK</span> <em>상세보기</em> </div>
@@ -269,7 +270,7 @@
                                               </div>
                                           </a>
                                       </div>
-                                      <div class="col-md-3 col-sm-6  fashion logo">
+                                      <div class="col-md-4 col-sm-6  fashion logo">
                                           <a id="demo01" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/screenshot/sound1.png" alt="image" style="height:321px; width:321px"/>
                                               <div class="portfolio_item_hover">
                                                   <div class="portfolio-border clearfix">
@@ -278,20 +279,11 @@
                                               </div>
                                           </a>
                                       </div>
-                                      <div class="col-md-3 col-sm-6  fashion logo">
+                                      <div class="col-md-4 col-sm-6  fashion logo">
                                           <a id="demo01" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/screenshot/commerce.png" alt="image" style="height:321px; width:321px"/>
                                               <div class="portfolio_item_hover">
                                                   <div class="portfolio-border clearfix">
                                                       <div class="item_info"> <span>KT COMMERCE 임직원 수련관 예약플랫폼</span> <em>상세보기</em> </div>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-                                      <div class="col-md-3 col-sm-6  fashion logo">
-                                          <a id="demo01" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/screenshot/factorydx.JPG" alt="image" style="height:321px; width:321px"/>
-                                              <div class="portfolio_item_hover">
-                                                  <div class="portfolio-border clearfix">
-                                                      <div class="item_info"> <span>KT 재난안전관리 공유 플랫폼</span> <em>상세보기</em> </div>
                                                   </div>
                                               </div>
                                           </a>
@@ -324,15 +316,6 @@
                                               <div class="portfolio_item_hover">
                                                   <div class="portfolio-border clearfix">
                                                       <div class="item_info"> <span>국기원 2018한마당축제</span> <em>상세보기</em> </div>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-                                      <div class="col-md-4 col-sm-6  fashion logo">
-                                          <a id="demo01" href="#animatedModal" class="portfolio_item"> <img src="img/portfolio/screenshot/factorydx.JPG" alt="image" style="height:321px; width:321px"/>
-                                              <div class="portfolio_item_hover">
-                                                  <div class="portfolio-border clearfix">
-                                                      <div class="item_info"> <span>국기원 유청소년단캠프</span> <em>상세보기</em> </div>
                                                   </div>
                                               </div>
                                           </a>
@@ -386,16 +369,26 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h2>Geschäfts Eines<br /> Web-Studios</h2>
                         <div class="h-50"></div>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
-                        <br />
-                        <br /> <img src="img/portfolio/02.jpg" alt="" class="img-responsive" />
-                        <br />
-                        <br />
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
-                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
-                        <br />
-                        <br /> </div>
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="margin-left:25px;">
+                                <img src="img/portfolio/screenshot/sound1.png" alt="" style="height:321px; width:520px">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/portfolio/screenshot/sound2.png" alt="" style="height:321px; width:520px">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/portfolio/screenshot/sound3.png" alt="" style="height:321px; width:520px">
+                            </div>
+                          </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -408,9 +401,37 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!--  main script  -->
     <script src="js/custom.js"></script>
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+        //spaceBetween:50,
+        // 슬라이드를 버튼으로 움직일 수 있습니다.
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // 현재 페이지를 나타내는 점이 생깁니다. 클릭하면 이동합니다.
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+
+        // 현재 페이지를 나타내는 스크롤이 생깁니다. 클릭하면 이동합니다.
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true,
+        },
+
+        // 3초마다 자동으로 슬라이드가 넘어갑니다. 1초 = 1000
+        autoplay: {
+          delay: 3000,
+        },
+      });
+    </script>
 </body>
 
 </html>
