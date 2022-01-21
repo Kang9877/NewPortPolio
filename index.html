@@ -350,18 +350,6 @@
                                               </div>
                                           </a>
                                       </div>
-                                      <div class="col-md-4 col-sm-6  fashion logo">
-                                          <a id="demo01" href="#animatedModal" class="portfolio_item">
-                                              <input type="hidden" class="titleName" value="2018 한마당축제">
-                                              <input type="hidden" class="gubun" value="gubun8">
-                                              <img src="img/portfolio/screenshot/hanmadang.png" alt="image" style="height:321px; width:321px"/>
-                                              <div class="portfolio_item_hover">
-                                                  <div class="portfolio-border clearfix">
-                                                      <div class="item_info"> <span>국기원 2018한마당축제</span> <em>상세보기</em> </div>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
                                   </div>
                                   <!-- end portfolio_container -->
                                 </div>
@@ -477,31 +465,84 @@
       });
 
       $(".portfolio_item").click(function(){
+        $(".swiper-wrapper").empty();
         let title = $(this).children(".titleName").val();
         let gubun = $(this).children(".gubun").val();
         $("#popTitle").text(title);
         var img = '';
+        if(gubun == 'gubun1'){
+            img = '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/factorydx2.PNG" alt="" style="height:321px; width:520px">'+
+            '</div>'+
+            '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/factorydx3.PNG" alt="" style="height:321px; width:520px">'+
+            '</div>'+
+            '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/factorydx4.PNG" alt="" style="height:321px; width:520px">'+
+            '</div>';
+        }
+        if(gubun == 'gubun2'){
+            img = '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/recycle.PNG" alt="" style="height:321px; width:520px">'+
+            '</div>'+
+            '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/recycle2.PNG" alt="" style="height:321px; width:520px">'+
+            '</div>'+
+            '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/recycle3.PNG" alt="" style="height:321px; width:520px">'+
+            '</div>';
+        }
+        if(gubun == 'gubun3'){
+            img = '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/cloud.JPG" alt="" style="height:321px; width:520px">'+
+            '</div>'+
+            '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/peakcut.JPG" alt="" style="height:321px; width:520px">'+
+            '</div>'+
+            '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/pv.JPG" alt="" style="height:321px; width:520px">'+
+            '</div>';
+        }
         if(gubun == 'gubun4'){
-            img = '<div class="swiper-slide">
-                <img src="img/portfolio/screenshot/block1.png" alt="" style="height:321px; width:520px">
-            </div>
-            <div class="swiper-slide">
-                <img src="img/portfolio/screenshot/block2.png" alt="" style="height:321px; width:520px">
-            </div>
-            <div class="swiper-slide">
-                <img src="img/portfolio/screenshot/block3.png" alt="" style="height:321px; width:520px">
-            </div>';
+            img = '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/block1.png" alt="" style="height:321px; width:520px">'+
+            '</div>'+
+            '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/block2.png" alt="" style="height:321px; width:520px">'+
+            '</div>'+
+            '<div class="swiper-slide">'+
+                '<img src="img/portfolio/screenshot/block3.png" alt="" style="height:321px; width:520px">'+
+            '</div>';
         }
         if(gubun == 'gubun5'){
-          img = '<div class="swiper-slide">
-              <img src="img/portfolio/screenshot/sound1.png" alt="" style="height:321px; width:520px">
-          </div>
-          <div class="swiper-slide">
-              <img src="img/portfolio/screenshot/sound2.png" alt="" style="height:321px; width:520px">
-          </div>
-          <div class="swiper-slide">
-              <img src="img/portfolio/screenshot/sound3.png" alt="" style="height:321px; width:520px">
-          </div>';
+          img = '<div class="swiper-slide">'+
+              '<img src="img/portfolio/screenshot/sound1.png" alt="" style="height:321px; width:520px">'+
+          '</div>'+
+          '<div class="swiper-slide">'+
+              '<img src="img/portfolio/screenshot/sound2.png" alt="" style="height:321px; width:520px">'+
+          '</div>'+
+          '<div class="swiper-slide">'+
+              '<img src="img/portfolio/screenshot/sound3.png" alt="" style="height:321px; width:520px">'+
+          '</div>';
+        }
+        if(gubun == 'gubun6'){
+          img = '<div class="swiper-slide">'+
+              '<img src="img/portfolio/screenshot/commerce.png" alt="" style="height:321px; width:520px">'+
+          '</div>'+
+          '<div class="swiper-slide">'+
+              '<img src="img/portfolio/screenshot/commerce2.png" alt="" style="height:321px; width:520px">'+
+          '</div>'+
+          '<div class="swiper-slide">'+
+              '<img src="img/portfolio/screenshot/commerce3.png" alt="" style="height:321px; width:520px">'+
+          '</div>';
+        }
+        if(gubun == 'gubun7'){
+          img = '<div class="swiper-slide">'+
+              '<img src="img/portfolio/screenshot/KPS.png" alt="" style="height:321px; width:520px">'+
+          '</div>'+
+          '<div class="swiper-slide">'+
+              '<img src="img/portfolio/screenshot/KMS.png" alt="" style="height:321px; width:520px">'+
+          '</div>';
         }
 
         $(".swiper-wrapper").append(img);
