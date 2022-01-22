@@ -441,6 +441,7 @@
     <script>
       $(".portfolio_item").click(function(){
         $(".swiper-wrapper").empty();
+        $("#popContext").empty();
         let title = $(this).children(".titleName").val();
         let gubun = $(this).children(".gubun").val();
         $("#popTitle").text(title);
@@ -457,15 +458,20 @@
                 '<img src="img/portfolio/screenshot/factorydx4.PNG" alt="" style="height:321px; width:520px">'+
             '</div>';
 
-            txt = '보유기술 : SPRING BOOT, JAVA, JAVASCRIPT, POSTGRE SQL, VUE JS
-            <br>
-            프로젝트 개요
-            KT 스마트팩토리 프로젝트에 일종으로 IoT Makers, 기가아이즈를 이용하여 IoT Makers에서 수집된 데이터를 확인하여 사용자가 관리하는 공장의 상태와 현재 정보를 확인하여 이상여부를 판단하고 모니터링하는 관제시스템 개발
-            <br>
-            담당 업무
-            - IoT Makers와 연동하여 수집된 데이터 가져오는 Batch 기능 담당
-            - 기가아이즈 연동하여 CCTV 영상 및 녹화영상 재생 기능 담당
-            - 장비 등록시 IoT Makers에 장비 정보 전달 담당';
+            txt = '보유기술 : SPRING BOOT, JAVA, JAVASCRIPT, POSTGRE SQL, VUE JS'+
+            '<br>'+
+            '<strong>프로젝트 개요</strong>'+
+            '<br>'+
+            'KT 스마트팩토리 프로젝트에 일종으로 IoT Makers, 기가아이즈를 이용하여 IoT Makers에서'+
+            '수집된 데이터를 확인하여 사용자가 관리하는 공장의 상태와 현재 정보를 확인하여 이상여부를 판단하고 모니터링하는 관제시스템 개발'+
+            '<br>'+
+            '<strong>담당 업무</strong>'+
+            '<br>'+
+            '- IoT Makers와 연동하여 수집된 데이터 가져오는 Batch 기능 담당'+
+            '<br>'+
+            '- 기가아이즈 연동하여 CCTV 영상 및 녹화영상 재생 기능 담당'+
+            '<br>'+
+            '- 장비 등록시 IoT Makers에 장비 정보 전달 담당';
         }
         if(gubun == 'gubun2'){
             img = '<div class="swiper-slide">'+
@@ -477,6 +483,21 @@
             '<div class="swiper-slide">'+
                 '<img src="img/portfolio/screenshot/recycle3.PNG" alt="" style="height:321px; width:520px">'+
             '</div>';
+
+            txt = '보유기술 : SPRING BOOT, JAVA, JAVASCRIPT, POSTGRE SQL, VUE JS'+
+            '<br>'+
+            '<strong>프로젝트 개요</strong>'+
+            '<br>'+
+            'KT 환경사업 프로젝트 중 페트병 수거 및 음식물 쓰레기 수거를 통하여 얻은 효과 및 사용자 이용가능한 포인트 등을 관리하고'+
+            '장비 상태와 현재 정보를 확인하여 이상여부를 판단, 모니터링하는 관제시스템 개발'+
+            '<br>'+
+            '<strong>담당 업무</strong>'+
+            '<br>'+
+            '- 통계 페이지 담당'+
+            '<br>'+
+            '- KT Map 이용하여 대시보드 기능 구현 담당'+
+            '<br>'+
+            '- Spring Batch 이용하여 통계 데이터, 수집 데이터 관리 담당';
         }
         if(gubun == 'gubun3'){
             img = '<div class="swiper-slide">'+
@@ -488,6 +509,20 @@
             '<div class="swiper-slide">'+
                 '<img src="img/portfolio/screenshot/pv.JPG" alt="" style="height:321px; width:520px">'+
             '</div>';
+
+            txt = '보유기술 : SPRING, JAVA, JAVASCRIPT, ANGULAR JS, POSTGRE SQL'+
+            '<br>'+
+            '<strong>프로젝트 개요</strong>'+
+            '<br>'+
+            'ESS솔루션이 정상작동 하고 있는지 여부와 솔루션을 적용한 결과를 모니터링 할 수 있는 페이지 유지보수 및 신규 개발'+
+            '<br>'+
+            '<strong>담당 업무</strong>'+
+            '<br>'+
+            '- 각종 ESS장비에서 수집된 데이터를 UI에 데이터 표출 및 통계 생성'+
+            '<br>'+
+            '- 그 외 추가적인 요청에 따라 유지보수 진행 담당'+
+            '<br>'+
+            '- 한전 측 데이터 전송관련 Batch작업 담당';
         }
         if(gubun == 'gubun4'){
             img = '<div class="swiper-slide">'+
@@ -499,6 +534,24 @@
             '<div class="swiper-slide">'+
                 '<img src="img/portfolio/screenshot/block3.png" alt="" style="height:321px; width:520px">'+
             '</div>';
+
+            txt = '보유기술 : NODE JS, ANGULAR JS, JAVASCRIPT, POSTGRE SQL'+
+            '<br>'+
+            '<strong>프로젝트 개요</strong>'+
+            '<br>'+
+            'AI MAKERS KIT이라는 로봇에 입력할 프로그램을 웹상에서 미리 볼 수 있도록 구현'+
+            '<br>'+
+            '코딩한 결과물을 여러 사람들과 공유 및 개선점 피드백 기능'+
+            '<br>'+
+            '코드로만 된 프로그래밍을 더욱 쉽게 UI로 보여줌으로 코딩을 쉽게 생각하도록 도와줌'+
+            '<br>'+
+            '<strong>담당 업무</strong>'+
+            '<br>'+
+            '- 만들기 화면에서 소리, 이미지 등 오브젝트 불러오기 및 관리자 등록 구현'+
+            '<br>'+
+            '- 공유하기, 클래스룸등 자신이 만든 프로젝트 공유 및 관리 구현'+
+            '<br>'+
+            '- 기초학습 영역 등록 및 관리 기능 구현';
         }
         if(gubun == 'gubun5'){
           img = '<div class="swiper-slide">'+
@@ -510,6 +563,28 @@
           '<div class="swiper-slide">'+
               '<img src="img/portfolio/screenshot/sound3.png" alt="" style="height:321px; width:520px">'+
           '</div>';
+
+          txt = '보유기술 : SPRING, JAVA, JAVASCRIPT, POSTGRE SQL, Spectrogram-master(오픈소스)'+
+          '<br>'+
+          '<strong>프로젝트 개요</strong>'+
+          '<br>'+
+          '소리분석을 통하여 해당 기기에 문제점 파악 및 조치 가능한 시스템 개발'+
+          '<br>'+
+          '수집서버와 코어서버의 중간 웹서버 서비스 개발'+
+          '<br>'+
+          '소리파일의 시각화를 통한 UI분석 기능 개발'+
+          '<br>'+
+          '수집서버, 코어서버와 통신을 위한 API Request, Response 기능 개발'+
+          '<br>'+
+          '<strong>담당 업무</strong>'+
+          '<br>'+
+          '- 기기의 부착할 디바이스를 관리하는 페이지 개발'+
+          '<br>'+
+          '- 수집서버로 부터 받은 데이터를 활용하여 현재 디바이스의 상태, 기기의 이상유무를 화면에 표시'+
+          '<br>'+
+          '- 비정상 소리 발생시 받은 소리데이터를 재생시키고 해당 소리 파일을 Spectrogram으로 표시'+
+          '<br>'+
+          '- 소리파일을 코어서버로 전송하여 분석된 결과를 화면에 표시';
         }
         if(gubun == 'gubun6'){
           img = '<div class="swiper-slide">'+
@@ -521,6 +596,20 @@
           '<div class="swiper-slide">'+
               '<img src="img/portfolio/screenshot/commerce3.png" alt="" style="height:321px; width:520px">'+
           '</div>';
+
+          txt = '보유기술 : SPRING, JAVA, JAVASCRIPT, TIBERO, 젠킨스'+
+          '<br>'+
+          '<strong>프로젝트 개요</strong>'+
+          '<br>'+
+          'KT 및 계열사 직원들이 사용하는 수련관 예약 시스템 개발'+
+          '<br>'+
+          '<strong>담당 업무</strong>'+
+          '<br>'+
+          '- 예약접수 기간 설정 기능 개발'+
+          '<br>'+
+          '- 예약가능한 숙소 정보 관리 페이지 개발'+
+          '<br>'+
+          '- 접수한 데이터 중 선별된 데이터를 관리하는 페이지 개발';
         }
         if(gubun == 'gubun7'){
           img = '<div class="swiper-slide">'+
@@ -529,6 +618,20 @@
           '<div class="swiper-slide">'+
               '<img src="img/portfolio/screenshot/KMS.png" alt="" style="height:321px; width:520px">'+
           '</div>';
+
+          txt = '보유기술 : SPRING, JAVA, JAVASCRIPT, SYBASE, MS SQL'+
+          '<br>'+
+          '<strong>프로젝트 개요</strong>'+
+          '<br>'+
+          '단증 취득 및 승급 심사 시스템 유지보수(국내, 해외)'+
+          '<br>'+
+          '<strong>담당 업무</strong>'+
+          '<br>'+
+          '- 정책 변경 및 프로세스상 이슈화 된 페이지 유지보수'+
+          '<br>'+
+          '- 해외 결제모듈 정책변경으로 인하여 변경 작업 진행'+
+          '<br>'+
+          '- DB에서 이상있는 데이터 찾아서 담당자에게 전달 및 수정 진행';
         }
         $("#popContext").append(txt);
         $(".swiper-wrapper").append(img);
