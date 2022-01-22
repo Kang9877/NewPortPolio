@@ -229,7 +229,7 @@
                                           <a id="demo01" href="#animatedModal" class="portfolio_item">
                                               <input type="hidden" class="titleName" value="KT페트병파쇄기/음식물쓰레기">
                                               <input type="hidden" class="gubun" value="gubun2">
-                                              <img src="img/portfolio/screenshot/factorydx.JPG" alt="image" style="height:321px; width:321px"/>
+                                              <img src="img/portfolio/screenshot/recycle.PNG" alt="image" style="height:321px; width:321px"/>
                                               <div class="portfolio_item_hover">
                                                   <div class="portfolio-border clearfix">
                                                       <div class="item_info"> <span>KT페트병파쇄기/음식물쓰레기</span> <em>상세보기</em> </div>
@@ -419,6 +419,9 @@
                             <div class="swiper-scrollbar"></div>
                         </div>
                   </div>
+                  <div class="col-md-8 col-md-offset-2" id="popContext">
+
+                  </div>
                 </div>
             </div>
         </div>
@@ -442,6 +445,7 @@
         let gubun = $(this).children(".gubun").val();
         $("#popTitle").text(title);
         var img = '';
+        var txt = '';
         if(gubun == 'gubun1'){
             img = '<div class="swiper-slide">'+
                 '<img src="img/portfolio/screenshot/factorydx2.PNG" alt="" style="height:321px; width:520px">'+
@@ -452,6 +456,16 @@
             '<div class="swiper-slide">'+
                 '<img src="img/portfolio/screenshot/factorydx4.PNG" alt="" style="height:321px; width:520px">'+
             '</div>';
+
+            txt = '보유기술 : SPRING BOOT, JAVA, JAVASCRIPT, POSTGRE SQL, VUE JS
+            <br>
+            프로젝트 개요
+            KT 스마트팩토리 프로젝트에 일종으로 IoT Makers, 기가아이즈를 이용하여 IoT Makers에서 수집된 데이터를 확인하여 사용자가 관리하는 공장의 상태와 현재 정보를 확인하여 이상여부를 판단하고 모니터링하는 관제시스템 개발
+            <br>
+            담당 업무
+            - IoT Makers와 연동하여 수집된 데이터 가져오는 Batch 기능 담당
+            - 기가아이즈 연동하여 CCTV 영상 및 녹화영상 재생 기능 담당
+            - 장비 등록시 IoT Makers에 장비 정보 전달 담당';
         }
         if(gubun == 'gubun2'){
             img = '<div class="swiper-slide">'+
@@ -516,7 +530,7 @@
               '<img src="img/portfolio/screenshot/KMS.png" alt="" style="height:321px; width:520px">'+
           '</div>';
         }
-
+        $("#popContext").append(txt);
         $(".swiper-wrapper").append(img);
         var mySwiper = new Swiper('.swiper-container', {
           slidesPerView : 1,
